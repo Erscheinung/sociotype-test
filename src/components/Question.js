@@ -35,8 +35,8 @@ class Question extends Component {
           F: 3,
           J: 3,
           P: 3,
-          secret1: 3,
-          secret2: 3
+          Terminal: 3,
+          Initial: 3
         }
       },
       resultSociotype: '',
@@ -147,7 +147,9 @@ class Question extends Component {
         SocionicsType2 += 'I'
       
       SocionicsType += SocionicsType2;
-      }
+    }
+
+    SocionicsType += Terminal > Initial ? "-Terminating" : "-Initial";
 
     return SocionicsType
   }
