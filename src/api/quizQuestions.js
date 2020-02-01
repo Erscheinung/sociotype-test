@@ -58,19 +58,6 @@ var quizQuestions = [
     question: 'Choose the option that you generally agree with more',
     answers: [
       {
-        type: 'T',
-        content: 'I willingly analyze and organize'
-      },
-      {
-        type: 'F',
-        content: 'I willingly communicate with loved ones'
-      },
-    ]
-  },
-  {
-    question: 'Choose the option that you generally agree with more',
-    answers: [
-      {
         type: 'Initial',
         content: 'My performance is higher in the first half of the day'
       },
