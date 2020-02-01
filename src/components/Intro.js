@@ -65,7 +65,7 @@ const Intro = ({ title, _onStartClick }) => {
         <h1>{title}</h1>
         {/* TODO: WILL CHANGE THIS THING DOWN HERE */}
         <ul className="list-group">
-          <li className="list-group-item">Consists of 30 questions</li>
+          <li className="list-group-item">Consists of 25 questions</li>
           <li className="list-group-item">Answer HONESTLY, and choose the option matching how you GENERALLY are </li>
         </ul>
         <StartBtn onClick={_onStartClick} style={{cursor:'pointer'}}>
