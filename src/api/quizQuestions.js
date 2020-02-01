@@ -2,458 +2,347 @@
 var quizQuestions = [
   // question #1
   {
-    question: 'Must One Imagine Sisyphus happy?',
+    question: 'Choose the option that you generally agree with more',
     answers: [
       {
-        type: ' ',
-        content: 'IF I WERE JOHN LENNON!'
+        type: 'E',
+        content: 'Expend a lot of energy rather than lying around passively, sometimes overstimulated.'
       },
       {
-        type: 'secret1',
-        content: 'IRRELEVANT'
-      },
-      {
-        type: 'secret2',
-        content: "THIS QUIZ SUCKS ALREADY"
+        type: 'I',
+        content: 'Have more saved up energy and do not use too much energy'
       },
     ]
   },
-  // question #2
-    {
-      question: 'I learn names pretty quickly',
-      answers: [
-        {
-          type: 'F',
-          content: 'SOUNDS RIGHT'
-        },
-        {
-          type: 'F, Negative',
-          content: "EH, NOT TOO GREAT AT IT"
-        },
-        {
-          type: 'T',
-          content: "SUCK AT IT"
-        }
-      ]
-    },
-  // // question #3
-    {
-      question: 'My presence is more: ',
-      answers: [
-        {
-          type: 'S, Negative',
-          content: 'Temporal than Spatial'
-        },
-        {
-          type: 'S',
-          content: 'Spatial than Temporal'
-        },
-      ]
-    },
-  // // question #4
-    {
-      question: "I spend energy without thinking",
-      answers: [
-        {
-          type: 'E',
-          content: 'WHICH I REGRET LATER'
-        },
-        {
-          type: 'I',
-          content: "I SAVE IT PRETTY EASILY"
-        }
-      ]
-    },
-  // // question #5
-    {
-      question: 'If necessary, easy to take care of myself',
-      answers: [
-        {
-          type: 'S',
-          content: 'SURE ENOUGH, MAN'
-        },
-        {
-          type: ' ',
-          content: 'NEVER HAD TO'
-        },
-        {
-          type: 'N',
-          content: "WITH GREAT RELUCTANCE"
-        }
-      ]
-    },
-  // // question #6
-    {
-      question: 'I\'m quite pleased to tell or show',
-      answers: [
-        {
-          type: 'E',
-          content: 'TRUE IN MY EXPERIENCE' 
-        },
-        {
-          type: 'I',
-          content: "MORE CALMER WHEN LISTENING/WATCHING"
-        }
-      ]
-    },
-  // // question #7
-    {
-      question: 'I\'m not a big fan of the Big 5',
-      answers: [
-        {
-          type: 'F, Negative',
-          content: 'I NEED A STRONGER CAUSAL BASIS FOR IT'
-        },
-        {
-          type: ' ',
-          content: 'DON\'T KNOW MUCH TO HAVE AN OPINION'
-        },
-        {
-          type: 'T',
-          content: 'DISAGREE'
-        }
-      ]
-    },
-  // // question #8
-    {
-      question: 'I am consistent and reliable',
-      answers: [
-        {
-          // briggs, color, letter
-          type: 'J',
-          content: 'AT THE COST OF SOME FLEXIBILITY'
-        },
-        {
-          type: 'P',
-          content: "RELY MORE OFTEN ON ADAPTABILITY"
-        }
-      ]
-    },
-  // // question #9
-    {
-      question: 'The extent of my activities',
-      answers: [
-        {
-          // briggs, color, letter
-          type: 'E',
-          content: 'GROWS IN WIDTH'
-        },
-        {
-          type: 'I',
-          content: "GROWS IN DEPTH"
-        }
-      ]
-    },
-  // // question #10
-    {
-      question: 'I tend to work in bursts',
-      answers: [
-        {
-          type: 'P',
-          content: 'OFTEN'
-        },
-        {
-          type: 'J',
-          content: "GENERALLY WORK MORE UNIFORMLY"
-        }
-      ]
-    },
-  // // question #11
-    {
-      question: 'I think I\'m a \'Feeling\' Type',
-      answers: [
-        {
-          type: 'F',
-          content: 'SOUNDS RIGHT TO ME'
-        },
-        {
-          type: ' ',
-          content: 'UNSURE'
-        },
-        {
-          type: 'T',
-          content: "CAN FEEL, BUT NOT A FEELING TYPE"
-        }
-      ]
-    },
-  // // question #12
-    {
-      question: 'I keep track of my time very well',
-      answers: [
-        {
-          type: 'N',
-          content: 'BETTER THAN MOST'
-        },
-        {
-          type: ' ',
-          content: 'EH, SO-SO'
-        },
-        {
-          type: 'secret1',
-          content: 'DECENTLY ENOUGH BUT NOT TOO GREAT'
-        }
-      ]
-    },
-  // // question #13
-    {
-      question: 'I tend to have pretty stable moods',
-      answers: [
-        {
-          type: 'J',
-          content: 'PRETTY MUCH, IF YOU DON\'T RUIN IT'
-        },
-        {
-          type: 'P',
-          content: "ACTUALLY QUITE UNSUSTAINABLE"
-        }
-      ]
-    },
-  // // question #14
-    {
-      question: 'I am quite interested in philosophy and literature',
-      answers: [
-        {
-          type: 'N',
-          content: 'TRUE ENOUGH'
-        },
-        {
-          type: ' ',
-          content: "NAH, THAT CAN'T BE ME!"
-        }
-      ]
-    },
-  // // question #15
-    {
-      question: 'I joke around a lot',
-      answers: [
-        {
-          type: 'E',
-          content: 'DEFINITELY!'
-        },
-        {
-          type: 'I',
-          content: "NOT MUCH"
-        }
-      ]
-    },
-  // // question #16
-    {
-      question: 'I am quite thin and not much lively in conversation',
-      answers: [
-        {
-          type: 'E',
-          content: 'NOT REALLY'
-        },
-        {
-          type: 'I',
-          content: "SOUNDS LIKE ME"
-        }
-      ]
-    },
-  // // question #17
-    {
-      question: 'I dislike unexpected obstacles in my plans',
-      answers: [
-        {
-          type: 'J',
-          content: 'PRETTY MUCH; I NEED TO HAVE THINGS FIXED DOWN'
-        },
-        {
-          type: 'P',
-          content: "WHO DOESN'T? BUT I'M QUITE FLEXIBLE"
-        }
-      ]
-    },
-  // // question #18
-    {
-      question: 'I express my mood better than my thoughts',
-      answers: [
-        {
-          type: 'F',
-          content: 'AGREED'
-        },
-        {
-          type: 'T',
-          content: "I'M MORE ARTICULATE THAN EXPRESSIVE"
-        }
-      ]
-    },
-  // // question #19
-    {
-      question: 'It is easier for me to just try and prove something than to persuade someone',
-      answers: [
-        {
-          type: 'T',
-          content: 'IF YOU MEAN PERSUASION THROUGH REASON'
-        },
-        {
-          type: 'F',
-          content: "PEOPLE RESPOND TO WELL TO MY SOFT APPROACH"
-        },
-        {
-          type: 'F, Negative',
-          content: "DESTROY THOSE SUCKERS IN DEBATE"
-        }
-      ]
-    },
-  // // Question 20
-    {
-      question: 'I keep my back straight',
-      answers: [
-        {
-          type: 'P',
-          content: 'NOT REALLY, ALSO TEND TO FIDGET A LOT'
-        },
-        {
-          type: 'J',
-          content: "YEAH, AND MY MOVEMENT IS SMOOTH"
-        }
-      ]
-    },
-  // // question #21 MISSING : T/F
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'J',
+        content: 'Better if I think over in advance'
+      },
+      {
+        type: 'P',
+        content: 'Better if I improvise and adapt'
+      },
+    ]
+  },
+  // needs improvement
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'S',
+        content: 'I am very expressive'
+      },
+      {
+        type: 'N',
+        content: 'I am more calculating than expressive'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'T',
+        content: 'I willingly analyze and organize'
+      },
+      {
+        type: 'F',
+        content: 'I willingly communicate with loved ones'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'T',
+        content: 'I willingly analyze and organize'
+      },
+      {
+        type: 'F',
+        content: 'I willingly communicate with loved ones'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'Initial',
+        content: 'My performance is higher in the first half of the day'
+      },
+      {
+        type: 'Terminal',
+        content: 'I willingly communicate with loved ones'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'E',
+        content: 'Most common regret: excessive activity'
+      },
+      {
+        type: 'I',
+        content: 'Most common regret: lack of activity'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'J',
+        content: 'Consistent and reliable, but do not have enough flexibility'
+      },
+      {
+        type: 'P',
+        content: 'Flexible and changeable, but lack consistency'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'S',
+        content: 'I try out proven and effective (in particular) ways'
+      },
+      {
+        type: 'N',
+        content: 'I am more effective in unusual and little-known ways'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'T',
+        content: 'Find it easier to understand technology and structures'
+      },
+      {
+        type: 'F',
+        content: 'Find it easier to understand feelings and attitudes'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'T',
+        content: 'Find it easier to understand technology and structures'
+      },
+      {
+        type: 'F',
+        content: 'Find it easier to understand feelings and attitudes'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'Initial',
+        content: 'Can easily let go of problems'
+      },
+      {
+        type: 'Terminal',
+        content: 'Am annoyed at unresolved problems'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'E',
+        content: 'Keep expanding the breadth of interests'
+      },
+      {
+        type: 'I',
+        content: 'Constantly limit the range of my concerns'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'J',
+        content: 'Formulate things more than purely observing'
+      },
+      {
+        type: 'P',
+        content: 'Better at noticing than formulating things'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'S',
+        content: 'Get tangible results daily'
+      },
+      {
+        type: 'N',
+        content: 'Procrastinate and try to achieve things "tomorrow"'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'F',
+        content: 'Emotions do not affect me very deeply'
+      },
+      {
+        type: 'N',
+        content: 'I\'m a person of deep feelings and emotions'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'Initial',
+        content: 'Indulge in more (unrelated) activities while on a task'
+      },
+      {
+        type: 'Terminal',
+        content: 'Easier to finish a job single-mindedly and following things through to completion'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'E',
+        content: 'Work is more scattered in breadth rather than intensely concentrated'
+      },
+      {
+        type: 'I',
+        content: 'Work is more specialised than being more scattered'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'S',
+        content: 'If anything is not clear, actively collect information'
+      },
+      {
+        type: 'N',
+        content: 'If anything is not clear, rely on intuition'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'T',
+        content: 'More a person of reason than the heart'
+      },
+      {
+        type: 'F',
+        content: 'More a person of the heart than reason'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'Initial',
+        content: 'Procrastinate on the details'
+      },
+      {
+        type: 'Terminal',
+        content: 'Considerate towards details'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'E',
+        content: 'Contact with strangers does not strain me'
+      },
+      {
+        type: 'I',
+        content: 'Contact with strangers takes more effort'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'J',
+        content: 'Somewhat more rigid than going with the flow of daily-life'
+      },
+      {
+        type: 'P',
+        content: 'Somewhat more with the flow of daily-life than being  stuck-up'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'S',
+        content: 'Will never lose touch with my practical nature'
+      },
+      {
+        type: 'N',
+        content: 'My impracticality bothers my family and friends'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'T',
+        content: 'People around me appreciate my logic more'
+      },
+      {
+        type: 'F',
+        content: 'People around me value me more for my humanity'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'Initial',
+        content: 'Starting new things very easily than finishing them; increasingly more on the plate'
+      },
+      {
+        type: 'Terminal',
+        content: 'Things are finished and put away; don\'t bite off more than I can chew'
+      },
+    ]
+  },
 
-  // // question #22
-    {
-      question: 'If things unclear, actively seek more information',
-      answers: [
-        {
-          type: 'S',
-          content: 'I TEND TO BE ON THE SAFER SIDE'
-        },
-        {
-          type: 'N,Negative',
-          content: 'RELATIVELY COMFORTABLE WITH AMBIGUITY '
-        },
-      ]
-    },
-  // // question #23
-    {
-      question: 'I keep my room clean',
-      answers: [
-        {
-          type: 'P, Negative',
-          content: 'MOSTLY'
-        },
-        {
-          type: 'J',
-          content: 'IT\'S NOT THAT MESSY, I TAKE EFFORTS!'
-        },
-        {
-          type: 'P',
-          content: "IT'S OFTEN SOMEWHAT MESSY"
-        }
-      ]
-    },
-  // // question #24
-    {
-      question: 'I appreciate my sense of reason and justice',
-      answers: [
-        {
-          type: 'F',
-          content: 'NOT MORE THAN MY HUMANITY AND SENSTIVITY'
-        },
-        {
-          type: 'T',
-          content: 'FAIRLY WELL'
-        },
-      ]
-    },
-  // // question #25
-    {
-      question: "I usually look well groomed and pay my bills on time",
-      answers: [
-        {
-          type: 'S',
-          content: 'WEIRD QUESTION, BUT YEAH.'
-        },
-        {
-          type: 'N',
-          content: "NOT AT ALL!"
-        }
-      ]
-    },
-  // // question #26
-    {
-      question: 'I am an Atheist',
-      answers: [
-        {
-          type: 'T',
-          content: 'YES'
-        },
-        {
-          type: 'T,Negative',
-          content: 'NOT AT ALL'
-        },
-        {
-          type: 'N',
-          content: "GOD IS, AFTER ALL, A PSYCHIC FACT"
-        }
-      ]
-    },
-  // // question #27
-    {
-      question: 'I strive to keep myself fit and active',
-      answers: [
-        {
-          type: ' ',
-          content: 'IT\'S MY PROFESSION'
-        },
-        {
-          type: 'S',
-          content: 'YES!'
-        },
-        {
-          type: 'N',
-          content: "NOT PARTICULARLY"
-        }
-      ]
-    },
-  // // question #28
-    {
-      question: 'Situations control me more than I control them',
-      answers: [
-        {
-          type: 'P',
-          content: 'UNFORTUNATELY'
-        },
-        {
-          type: 'P,Negative',
-          content: 'NOT THAT OFTEN'
-        },
-      ]
-    },
-  // // question #29
-    {
-      question: 'I am decisive and wilful',
-      answers: [
-        {
-          type: 'S',
-          content: 'I BELIEVE SO'
-        },
-        {
-          type: 'S,Negative',
-          content: 'ABSOLUTELY NOT'
-        },
-        {
-          type: 'N',
-          content: "HA! IF ONLY!"
-        }
-      ]
-    },
-  // // question #30
-    {
-      question: "I'm not skinny",
-      answers: [
-        {
-          type: 'E',
-          content: "SHAMEFULLY AGREE" 
-        },
-        {
-          type: 'I',
-          content: "I'M QUITE SKINNY"
-        },
-      ]
-    },
+
+  
 ]
 
 export default quizQuestions
