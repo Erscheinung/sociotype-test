@@ -30,7 +30,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://Erscheinung.github.io/sociotype-test",
+  "homepage": "https://Erscheinung.github.io/sociotype-test/tree/gulenko",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
