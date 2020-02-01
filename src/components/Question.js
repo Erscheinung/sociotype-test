@@ -149,7 +149,7 @@ class Question extends Component {
       SocionicsType += SocionicsType2;
     }
 
-    SocionicsType += Terminal > Initial ? "-Terminating" : "-Initial";
+    SocionicsType += SocionicsAnswer.Terminal > SocionicsAnswer.Initial ? "-Terminating" : "-Initial";
 
     return SocionicsType
   }
