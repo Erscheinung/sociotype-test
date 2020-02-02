@@ -83,7 +83,10 @@ class Sociotype extends Component {
     return (
       <IEI
         title={'Introvert | Intuitive | Ethics | Rational'}
-        content={`Intuitive Ethical Introver`}
+        content={`Intuitive Ethical Introvert
+        STRENGTHS: Considerate, tactful, gentle person.
+        WEAKNESSES: Intrinsically vulnerable, contradictory. Somewhat unsure of himself. Prone to experiencing doubts and fluctuations in arriving at a decision
+        RECOMMENDATIONS: Best if occupation relates to humanities. Can work well anywhere where he is required to elegantly communicate with a small group of people. Recommended professions include translator, librarian, writer, journalist, editor, may realize themselves in the field of arts as critics, writers, and poets.`}
         onBackClick={this.onIEI_click}
       />
     )
