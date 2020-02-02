@@ -33,11 +33,11 @@ var quizQuestions = [
     answers: [
       {
         type: 'S',
-        content: 'I am very expressive'
+        content: 'More practical rather than a daydreamer'
       },
       {
         type: 'N',
-        content: 'I am more calculating than expressive'
+        content: 'Less practical and more prone to fantasizing'
       },
     ]
   },
@@ -59,11 +59,11 @@ var quizQuestions = [
     answers: [
       {
         type: 'Initial',
-        content: 'My performance is higher in the first half of the day'
+        content: 'Performance is higher in the first half of the day'
       },
       {
         type: 'Terminal',
-        content: 'I willingly communicate with loved ones'
+        content: 'Performance is higher in the second half of the day'
       },
     ]
   },
@@ -103,19 +103,6 @@ var quizQuestions = [
       {
         type: 'N',
         content: 'I am more effective in unusual and little-known ways'
-      },
-    ]
-  },
-  {
-    question: 'Choose the option that you generally agree with more',
-    answers: [
-      {
-        type: 'T',
-        content: 'Find it easier to understand technology and structures'
-      },
-      {
-        type: 'F',
-        content: 'Find it easier to understand feelings and attitudes'
       },
     ]
   },
@@ -220,6 +207,19 @@ var quizQuestions = [
       {
         type: 'I',
         content: 'Work is more specialised than being more scattered'
+      },
+    ]
+  },
+  {
+    question: 'Choose the option that you generally agree with more',
+    answers: [
+      {
+        type: 'J',
+        content: 'Tend to act surely when all issues have been debugged'
+      },
+      {
+        type: 'P',
+        content: 'Tend to act quickly in changing situations'
       },
     ]
   },
