@@ -21,9 +21,9 @@ class Results extends Component {
     return <Sociotype resultSociotype={this.props.resultSociotype} />
   }
 
-  renderPieChart() {
-    return <CanvasJSChart options = {options} />
-  }
+  // renderPieChart() {
+  //   return <CanvasJSChart options = {options} />
+  // }
 
   render() {
     let showSociotypeResult = this.state.showSociotypeResult
