@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
-export const SLI = ({ title, content, onBackClick }) => {
+export const SLI = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -30,7 +30,7 @@ export const SLI = ({ title, content, onBackClick }) => {
   )
 }
 
-export const SEI = ({ title, content, onBackClick }) => {
+export const SEI = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -49,7 +49,7 @@ export const SEI = ({ title, content, onBackClick }) => {
   )
 }
 
-export const IEI = ({ title, content, onBackClick }) => {
+export const IEI = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -68,7 +68,7 @@ export const IEI = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ILI = ({ title, content, onBackClick }) => {
+export const ILI = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -87,7 +87,7 @@ export const ILI = ({ title, content, onBackClick }) => {
   )
 }
 
-export const LSI = ({ title, content, onBackClick }) => {
+export const LSI = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -106,7 +106,7 @@ export const LSI = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ESI = ({ title, content, onBackClick }) => {
+export const ESI = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -125,7 +125,7 @@ export const ESI = ({ title, content, onBackClick }) => {
   )
 }
 
-export const EII = ({ title, content, onBackClick }) => {
+export const EII = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -144,7 +144,7 @@ export const EII = ({ title, content, onBackClick }) => {
   )
 }
 
-export const LII = ({ title, content, onBackClick }) => {
+export const LII = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -163,7 +163,7 @@ export const LII = ({ title, content, onBackClick }) => {
   )
 }
 
-export const SLE = ({ title, content, onBackClick }) => {
+export const SLE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -182,7 +182,7 @@ export const SLE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const SEE = ({ title, content, onBackClick }) => {
+export const SEE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -201,7 +201,7 @@ export const SEE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const IEE = ({ title, content, onBackClick }) => {
+export const IEE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -220,7 +220,7 @@ export const IEE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ILE = ({ title, content, onBackClick }) => {
+export const ILE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -239,7 +239,7 @@ export const ILE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const LSE = ({ title, content, onBackClick }) => {
+export const LSE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -258,7 +258,7 @@ export const LSE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const ESE = ({ title, content, onBackClick }) => {
+export const ESE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -277,7 +277,7 @@ export const ESE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const EIE = ({ title, content, onBackClick }) => {
+export const EIE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
@@ -296,7 +296,7 @@ export const EIE = ({ title, content, onBackClick }) => {
   )
 }
 
-export const LIE = ({ title, content, onBackClick }) => {
+export const LIE = ({ title, content1, content2, content3, onBackClick }) => {
   return (
     <Wrapper className="container">
       <CardDef>
