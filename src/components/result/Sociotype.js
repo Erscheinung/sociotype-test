@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Results from './Results'
 import { Wrapper } from '../utils/ResultWrapper'
 import {
   SLI,
