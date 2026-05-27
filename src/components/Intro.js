@@ -50,6 +50,9 @@ function getLyingVariations() {
   const Lying = [
     'Lying',
     'Fibbing',
+    'Fabricating',
+    'Misleading',
+    'Deceiving',
   ];
   return Lying[Math.floor(Math.random() * Lying.length)];
 }
