@@ -101,6 +101,9 @@ export const CardDef = styled.div.attrs({
   background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.3), transparent 1px, rgba(0, 0, 0, 0.3) 2px);
   background-size: 3px 3px;
   color: #fff;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  padding-bottom: 1.5rem;
   ${media.tablet`width: 90%;`};
   ${media.laptop`width: 60%;`};
   h1 {
@@ -110,8 +113,8 @@ export const CardDef = styled.div.attrs({
     color: ${colors.$colorGold};
     text-align: center;
     margin-top: 2em;
-    ${media.tablet`font-size: 1.5em; letter-spacing: 1.5px; margin-top: 3em;`};
-    ${media.laptop`font-size: 2em; letter-spacing: 2px; margin-top: 1.5em;`};
+    ${media.tablet`font-size: 1.35em; margin-top: 2.5em;`};
+    ${media.laptop`font-size: 1.6em; margin-top: 1.5em;`};
   }
   .close {
     position: absolute;
@@ -123,10 +126,25 @@ export const CardDef = styled.div.attrs({
     ${media.laptop`font-size: 2em; top: 5%;`};
   }
   p {
-    padding: 1em 2.5em;
+    color: #f4f1e5;
+    line-height: 1.6;
+    padding: 0.65em 1.5em;
     font-size: 1em;
     font-family: ${fonts.$latoFont};
-    ${media.tablet`font-size: 1.5em; padding: 1.5em 2em;`};
-    ${media.laptop`font-size: 2em; padding: 1em 2.5em;`};
+    ${media.tablet`font-size: 1.1em; padding: 0.75em 2em;`};
+    ${media.laptop`font-size: 1.15em; padding: 0.75em 2.5em;`};
+  }
+  a {
+    border: 1px solid rgba(212, 205, 150, 0.55);
+    border-radius: 6px;
+    color: ${colors.$colorGold};
+    display: inline-block;
+    padding: 0.75rem 1.1rem;
+    text-decoration: none;
+  }
+  a:hover {
+    background: ${colors.$colorGold};
+    color: #202124;
+    text-decoration: none;
   }
 `

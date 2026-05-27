@@ -41,6 +41,7 @@ class Sociotype extends Component {
       showESE: false,
       showEIE: false,
       showLIE: false,
+      shareMessage: ''
     }
     this.onSLI_click = this.onSLI_click.bind(this)
     this.onSEI_click = this.onSEI_click.bind(this)
@@ -58,6 +59,9 @@ class Sociotype extends Component {
     this.onESE_click = this.onESE_click.bind(this)
     this.onEIE_click = this.onEIE_click.bind(this)
     this.onLIE_click = this.onLIE_click.bind(this)
+    this.onResultDescriptionClick = this.onResultDescriptionClick.bind(this)
+    this.handleExportResult = this.handleExportResult.bind(this)
+    this.handleShareResult = this.handleShareResult.bind(this)
   }
 
   renderSLI() {
@@ -304,75 +308,133 @@ class Sociotype extends Component {
     }
     return (
       <Wrapper>
-        <h1 className="display-3 title">Sociotype Result</h1>
-        <hr className="my-4" />
-        <h2 className="display-6 resultTxt">{this.props.resultSociotype}</h2>
-        <hr className="my-5" />
-        <p className="lead">What does this result mean?</p>
-        <ul className="list-group briggs">
-          <li className="list-group-item" onClick={this.onSLI_click}>
-            SLI
-          </li>
-          <li className="list-group-item" onClick={this.onSEI_click}>
-            SEI
-          </li>
-          <li className="list-group-item" onClick={this.onIEI_click}>
-            IEI
-          </li>
-          <li className="list-group-item" onClick={this.onILI_click}>
-            ILI
-          </li>
-        </ul>
-        <ul className="list-group briggs">
-          <li className="list-group-item" onClick={this.onLSI_click}>
-            LSI
-          </li>
-          <li className="list-group-item" onClick={this.onESI_click}>
-            ESI
-          </li>
-          <li className="list-group-item" onClick={this.onEII_click}>
-            EII
-          </li>
-          <li className="list-group-item" onClick={this.onLII_click}>
-            LII
-          </li>
-        </ul>
-        <ul className="list-group briggs">
-          <li className="list-group-item" onClick={this.onSLE_click}>
-            SLE
-          </li>
-          <li className="list-group-item" onClick={this.onSEE_click}>
-            SEE
-          </li>
-          <li className="list-group-item" onClick={this.onIEE_click}>
-            IEE
-          </li>
-          <li className="list-group-item" onClick={this.onILE_click}>
-            ILE
-          </li>
-        </ul>
-        <ul className="list-group briggs">
-          <li className="list-group-item" onClick={this.onLSE_click}>
-            LSE
-          </li>
-          <li className="list-group-item" onClick={this.onESE_click}>
-            ESE
-          </li>
-          <li className="list-group-item" onClick={this.onEIE_click}>
-            EIE
-          </li>
-          <li className="list-group-item" onClick={this.onLIE_click}>
-            LIE
-          </li>
-        </ul>
-        <p className="lead" style={{marginTop: 5 + 'em'}}>
-          <a href="https://erscheinung.github.io/sociotype-test/">
-          <button type="button" class="btn btn-outline-dark" style={{color: '#d4cd96'}}>Retake test</button>
-          </a>
-        </p>
-        
+        <div className="result-card" id="result-card">
+          <h1 className="title">Sociotype Result</h1>
+          <h2 className="resultTxt">{this.props.resultSociotype}</h2>
+          <p className="lead">
+            Your strongest match is {this.getBaseSociotype()}. Read the profile first, then export or share your result.
+          </p>
+          <div className="result-actions">
+            <button type="button" className="action-button primary" onClick={this.onResultDescriptionClick}>
+              Read {this.getBaseSociotype()} description
+            </button>
+            <button type="button" className="action-button secondary" onClick={this.handleExportResult}>
+              Export image
+            </button>
+            <button type="button" className="action-button secondary" onClick={this.handleShareResult}>
+              Share result
+            </button>
+          </div>
+          {this.state.shareMessage && <p className="share-message">{this.state.shareMessage}</p>}
+          <div className="type-section">
+            <h2>Explore all type descriptions</h2>
+            <div className="type-grid">
+              {this.renderTypeButton('SLI', this.onSLI_click)}
+              {this.renderTypeButton('SEI', this.onSEI_click)}
+              {this.renderTypeButton('IEI', this.onIEI_click)}
+              {this.renderTypeButton('ILI', this.onILI_click)}
+              {this.renderTypeButton('LSI', this.onLSI_click)}
+              {this.renderTypeButton('ESI', this.onESI_click)}
+              {this.renderTypeButton('EII', this.onEII_click)}
+              {this.renderTypeButton('LII', this.onLII_click)}
+              {this.renderTypeButton('SLE', this.onSLE_click)}
+              {this.renderTypeButton('SEE', this.onSEE_click)}
+              {this.renderTypeButton('IEE', this.onIEE_click)}
+              {this.renderTypeButton('ILE', this.onILE_click)}
+              {this.renderTypeButton('LSE', this.onLSE_click)}
+              {this.renderTypeButton('ESE', this.onESE_click)}
+              {this.renderTypeButton('EIE', this.onEIE_click)}
+              {this.renderTypeButton('LIE', this.onLIE_click)}
+            </div>
+          </div>
+          <div className="secondary-actions">
+            <a href="https://erscheinung.github.io/sociotype-test/">
+              <button type="button" className="action-button secondary">Retake test</button>
+            </a>
+          </div>
+        </div>
       </Wrapper>
     )
+  }
+
+  getBaseSociotype() {
+    return this.props.resultSociotype.split('-')[0]
+  }
+
+  renderTypeButton(type, onClick) {
+    return (
+      <button type="button" className="type-button" onClick={onClick}>
+        {type}
+      </button>
+    )
+  }
+
+  onResultDescriptionClick() {
+    const handlerName = `on${this.getBaseSociotype()}_click`
+
+    if (this[handlerName]) {
+      this[handlerName]()
+    }
+  }
+
+  handleExportResult() {
+    const canvas = document.createElement('canvas')
+    const context = canvas.getContext('2d')
+    const result = this.props.resultSociotype
+    const url = 'https://erscheinung.github.io/sociotype-test/'
+
+    canvas.width = 1200
+    canvas.height = 630
+
+    context.fillStyle = '#202124'
+    context.fillRect(0, 0, canvas.width, canvas.height)
+    context.fillStyle = '#302f34'
+    context.fillRect(70, 70, canvas.width - 140, canvas.height - 140)
+    context.strokeStyle = '#d4cd96'
+    context.lineWidth = 4
+    context.strokeRect(70, 70, canvas.width - 140, canvas.height - 140)
+
+    context.fillStyle = '#f8f5e8'
+    context.font = '36px Arial'
+    context.textAlign = 'center'
+    context.fillText('Another Personality Test', canvas.width / 2, 175)
+
+    context.fillStyle = '#d4cd96'
+    context.font = 'bold 118px Arial'
+    context.fillText(result, canvas.width / 2, 330)
+
+    context.fillStyle = '#d8d7ce'
+    context.font = '30px Arial'
+    context.fillText(`Read more at ${url}`, canvas.width / 2, 455)
+
+    const link = document.createElement('a')
+    link.download = `sociotype-result-${result}.png`
+    link.href = canvas.toDataURL('image/png')
+    link.click()
+  }
+
+  handleShareResult() {
+    const shareData = {
+      title: 'My sociotype result',
+      text: `My sociotype result is ${this.props.resultSociotype}.`,
+      url: 'https://erscheinung.github.io/sociotype-test/'
+    }
+
+    if (navigator.share) {
+      navigator.share(shareData).catch(() => {
+        this.setState({ shareMessage: 'Sharing was cancelled.' })
+      })
+      return
+    }
+
+    if (!navigator.clipboard) {
+      this.setState({ shareMessage: `${shareData.text} ${shareData.url}` })
+      return
+    }
+
+    navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`).then(() => {
+      this.setState({ shareMessage: 'Result link copied to clipboard.' })
+    })
   }
 
 

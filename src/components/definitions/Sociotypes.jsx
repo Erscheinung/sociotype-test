@@ -3,9 +3,9 @@ import { CardDef } from '../utils/Cards'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
-  position: fixed;
-  min-height: 100%;
-  max-width: 100%;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
